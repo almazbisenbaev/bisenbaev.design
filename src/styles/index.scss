@@ -1,0 +1,74 @@
+@import 'fontface';
+
+// @include font-face('HVNC', '../../public/fonts/Helvetica/HelveticaBold', normal, normal, woff ttf eot);
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    background: #000;
+	overflow: hidden;
+}
+
+.container {
+    overflow: hidden;
+    // cursor: ew-resize;
+    white-space: nowrap;
+    padding: 10vh 0;
+    transform: rotate(-3deg);
+}
+
+.superslider {
+    font: bold normal 10vw/1.2 "Montserrat", sans-serif; // 12vw/1.2
+    position: relative;
+    color: #fff;
+    display: inline-flex;
+    margin: 0;
+	// padding: 0 15%;
+	padding: 0 150px;
+    will-change: transform;
+
+    a {
+		text-decoration: none;
+		color: #000;
+		text-shadow: -1px -1px 0 #fff,  1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+		transition: 0.3s;
+		&:hover, &:focus {
+			color: #fff;
+			text-shadow: none;
+		}
+    }
+}
+
+@media (min-width: 1200px){
+
+    .superslider {
+        font-size: 6vw;
+    }
+
+}
+
+.superslider-slide {
+	padding-right: 45px;
+	display: inline-block;
+}
+
+@media (min-width: 1200px){
+    .superslider-slide {
+        padding-right: 90px;
+    }
+}
+
+.item-label {
+	display: inline;
+	user-select: none;
+}
+
+// Extra
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
